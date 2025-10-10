@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mensaje Tracking</title>
+    <link rel="stylesheet" href="Style.css" type="text/css">
+    <link rel="icon" href="farmacias_peruanas_logo (1)-Photoroom.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="fondo">
+        <header>
+            <div class="contenedor">
+                <nav class="menu">
+                    <h1>Notificación de Pedido</h1>
+                    <a href="Tracking.html"><img src="Farmacias_Peruanas.svg" alt="logo"></a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form id="formulario" class="formulario">
+                <div class="campo">
+                    <label for="Pedido">
+                        <h3>Numero de pedido</h2>
+                    </label>
+                    <input type="text" id="numeroPedido" placeholder="Ej: 123456789" required>
+                </div>
+                <div class="campo">
+                    <label for="Cliente">
+                        <h3>Nombre del Cliente</h3>
+                    </label>
+                    <input type="text" id="nombreCliente" placeholder="Ej: Juan Perez" required>
+                </div>
+                <button type="submit" id="btnGenerar">
+                    <h3>Generar mensaje</h3>
+                </button>
+            </form>
+            <section class="mensaje">
+                <!-- <h2>Mensaje generado:</h2> -->
+                <textarea id="mensaje2" readonly placeholder="Aquí aparecerá el mensaje..."></textarea>
+                <div class="acciones">
+                    <button id="btnCopiar">📋Copiar</button>
+                    <span id="copiado"></span>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="Scrips.js"></script>
+</body>
+
+</html>
